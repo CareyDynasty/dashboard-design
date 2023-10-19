@@ -385,3 +385,63 @@ main {
     font-size: 0.9em;
 }
 /* End */
+
+/*------------------------------- Trending -------------------------------------*/
+/* Start */
+.trending {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column; 
+}
+
+.trending > h1 {
+    font-size: var(--header-font-size);
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.t-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 0.6em;
+    background-color: white;
+    padding: 1em 1.6em;
+    box-shadow: 0px 9px 15px 0px #bdbdbd;
+    cursor: pointer;
+}
+
+.t-card > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 1.3em;
+}
+
+.t-card > div > .profile-pics {
+    height: 3.8rem;
+    width: 3.8rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.t-card > div:nth-of-type(1) > .profile-pics {
+    background-image: url(imgs/avatar.png);
+}
+.t-card > div:nth-of-type(2) > .profile-pics {
+    background-image: url(imgs/detective.png);
+}
+.t-card > div:nth-of-type(3) > .profile-pics {
+    background-image: url(imgs/loudspeaker.png);
+}
+.t-card > div:nth-of-type(4) > .profile-pics {
+    background-image: url(imgs/presentation.png);
+}
+
+.t-profiles > p {
+    margin-top: 0.3em;
+    font-size: 0.9rem;
+    color: rgb(124, 124, 124);
+}
+/* End */
