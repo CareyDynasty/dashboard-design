@@ -266,4 +266,79 @@ a {
 }
 /* End */
 
+/* ---------------------------------Main ----------------------------------------------- */
+/* Start */
+main {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template: repeat(2, 1fr) / 1fr 19rem;
+    background-color: var(--primary-color);
+    gap: 1.9rem;
+    padding: 1.9rem;
+}
+/*---------------- Projects -------------------------------------------*/
+/* Start */
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+}
 
+.projects > h1 {
+    font-size: var(--header-font-size);
+    font-weight: 500;
+    margin-bottom: 0.63em;
+}
+
+.p-card {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.2rem, 1fr));
+    grid-auto-rows: minmax(14rem, 20rem);
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.63rem;
+    border-left: 0.63rem solid #eab308;
+    background-color: white;
+    padding: 1.9rem;
+    box-shadow: 0px 9px 15px 0px #bdbdbd;
+    gap: 1.8rem; 
+    cursor: pointer;
+}
+
+.card > .text > h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card > .text > p {
+    margin-top: 0.3rem;
+    color: rgb(124, 124, 124);
+}
+.card > .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+.icons > div {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icons > div:nth-of-type(1) {
+    background-image: url(svgs/star.png);
+}
+.icons > div:nth-of-type(2) {
+    background-image: url(svgs/eye.png);
+}
+.icons > div:nth-of-type(3) {
+    background-image: url(svgs/fork.png); 
+}
+/* End */
